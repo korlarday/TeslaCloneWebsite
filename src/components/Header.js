@@ -17,15 +17,19 @@ function Header() {
         {cars &&
           cars.map((car, index) => {
             return (
-              <a key={index} href="#/">
+              <a key={index} href="#/" className="navStyle">
                 {car}
               </a>
             );
           })}
       </Menu>
       <RightMenu>
-        <a href="#/">Shop</a>
-        <a href="#/">Account</a>
+        <a href="#/" className="navStyle">
+          Shop
+        </a>
+        <a href="#/" className="navStyle">
+          Account
+        </a>
         <FontAwesomeIcon
           className="pointer"
           icon="bars"
@@ -106,7 +110,7 @@ const Menu = styled.div`
   a {
     font-weight: 600;
     text-transform: uppercase;
-    padding: 0 10px;
+    padding: 10px 14px;
     flex-wrap: nowrap;
   }
 
@@ -121,7 +125,8 @@ const RightMenu = styled.div`
   a {
     font-weight: 600;
     text-transform: uppercase;
-    margin-right: 25px;
+    margin-right: 15px;
+    padding: 10px 14px;
   }
 `;
 
